@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+<div align="center">
+		<h2 class="title">공지사항</h2>
+     
+		<div class="srch-select">
+			<form name="f" method="post">
+				<input type="hidden" name="currentPage" id="currentPage" value="1">
+				<input type="hidden" name="rowsPerPage" id="rowsPerPage" value="10">
+				<input type="hidden" name="seq" id="seq" value="0">
+				<div class="select-wrap" style="width:200px; margin-right:-4px;">
+					<select class="" title="해당지역 선택란" name="searchArea" id="searchArea" onchange="loadDisplayJijumList(); ">
+						<option value="">전체지역</option>
+						
+						<option value="A">서울</option>
+						
+						<option value="C">인천</option>
+						
+						<option value="I">경기</option>
+						
+						<option value="F">대전</option>
+						
+						<option value="Q">세종</option>
+						
+						<option value="O">충북</option>
+						
+						<option value="N">충남</option>
+						
+						<option value="D">대구</option>
+						
+						<option value="K">경북</option>
+						
+						<option value="J">경남</option>
+						
+						<option value="G">울산</option>
+						
+						<option value="B">부산</option>
+						
+						<option value="E">광주</option>
+						
+						<option value="M">전북</option>
+						
+						<option value="L">전남</option>
+						
+						<option value="H">강원</option>
+						
+						<option value="P">제주</option>
+					</select>
+				</div>
+				<div class="select-wrap" style="width:200px; margin-right:-4px;">
+					<select class="" title="해당지역 점포선택란" name="searchJijumId" id="searchJijumId">
+						<option value="" selected="selected">전체점포</option>
+					</select>
+				</div>
+            </form>
+		
+            <br>
+            <br>
+
+<section id="conts" tabindex="-1" style="margin-top:65px;">
+    <div class="board-list">
+        <table border="1">
+            <caption>
+                
+            </caption>
+            <colgroup><col style="width:120px;"><col style="width:230px;"><col><col style="width:170px;"></colgroup>
+            <thead>
+            <tr>
+                <th scope="col" class="num">번호</th>
+                <th scope="col" class="local">구분</th>
+                <th scope="col" class="content">제목</th>
+                <th scope="col" class="date">게시일</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            <tr>
+            </tr><tr class="notice">
+                <td class="num">1<i class="ico notice" aria-label="주요 공지"></i></td>
+                <td class="local">
+                    
+                           전점
+                    
+                </td>
+                <td class="content">
+                    <a href="javascript:goView('43303');">이마트 사칭 사이트 주의안내</a>
+                    
+                    <span class="ico-new"><span class="hide"></span></span>
+                </td>
+                <td class="date">2022.04.21</td>
+            </tr>
+            
+            
+            <tr>
+                <td class="num">2</td>
+                <td class="local">
+                
+                       전점
+                
+                </td>
+                
+                <td class="content"><a href="javascript:goView('43587');">리뷰 대상상품 확대 및 e머니 적립금액 변경 공지</a> </td>
+                <td class="date">2022.05.13</td>
+            </tr>
+            <!-- //loop -->
+            
+            <tr>
+                <td class="num">3</td>
+                <td class="local">
+                
+                       전점
+                
+                </td>
+                
+                <td class="content"><a href="javascript:goView('43575');">평범함을 거부한 매운 비빔면 2종, 이마트 단독 기획!</a> </td>
+                <td class="date">2022.05.05</td>
+            </tr>
+            <!-- //loop -->
+            
+            <tr>
+                <td class="num">4</td>
+                <td class="local">
+                
+                       전점
+                
+                </td>
+                
+                <td class="content"><a href="javascript:goView('43540');">취향대로 골라먹는 비빔면의 계절!</a> </td>
+                <td class="date">2022.05.04</td>
+            </tr>
+            <!-- //loop -->
+            
+            <tr>
+                <td class="num">5</td>
+                <td class="local">
+                
+                       전점
+                
+                </td>
+                
+                <td class="content"><a href="javascript:goView('43538');">취향대로 골라먹는 비빔면의 계절!</a> </td>
+                <td class="date">2022.05.04</td>
+            </tr>
+            <!-- //loop -->
+            
+            <tr>
+                <td class="num">6</td>
+                <td class="local">
+                
+                       전점
+                
+                </td>
+                
+                <td class="content"><a href="javascript:goView('43130');">이마트 52주 안전·보건관리 로드맵</a> </td>
+                <td class="date">2022.04.06</td>
+            </tr>
+            <!-- //loop -->
+            
+            <tr>
+                <td class="num">7</td>
+                <td class="local">
+                
+                       전점
+                
+                </td>
+                
+                <td class="content"><a href="javascript:goView('42149');">무료주차권 발급방식 변경 안내</a> </td>
+                <td class="date">2021.12.28</td>
+            </tr>
+            <!-- //loop -->
+            
+            </tbody>
+        </table>
+    </div>
+
+<div class="paging t_center">
+
+     
+        <a href="#" class="ini_link  disable" onclick="return false;"><span class="hide">맨 처음 페이지로 가기</span></a>
+    
+    
+
+
+     
+         <a href="#" class="pre_link  disable" title="이전페이지로 가기" onclick="return false;"><span class="hide">이전페이지로 가기</span></a>
+     
+     
+ 
+ <span class="d-paginate-list">
+     
+         
+             
+                 <a href="#" class="" title="현재페이지" onclick="return false;">1</a>
+                 <a href="" title="6페이지로 가기">2</a>
+                 <a href="" title="7페이지로 가기">3</a>
+                 <a href="" title="8페이지로 가기">4</a>
+                 <a href="" title="9페이지로 가기">5</a>
+                </span>
+                <a href="javascript:paging(2);" class="next_link"><span class="hide">▶다음 페이지로 가기</span></a>
+                <a href="javascript:paging(9);" class="end_link"><span class="hide">▶▶</span></a>
+            </div>
+        </section>
+
+    </body>	
+</html>

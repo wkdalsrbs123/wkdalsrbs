@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" style="margin-left: 10px;margin-right: 10px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Table1{
+            padding:0px; margin:0px;
+            color: black;
+            border-top: 2px solid rgb(139, 133, 133);
+            text-align: center;
+            background-color: bisque;
+            border-collapse: collapse;
+            
+        
+        }
+
+        .Table2{
+            border-collapse: collapse;
+            background-color:#f8f7f7;
+            padding:0px; margin:0px;
+            color: rgb(7, 7, 7);
+            border-top: 3px solid rgb(0, 0, 0);
+            width: 100%;     
+        }
+        
+        .Table2 td {
+            width: 100%;
+            padding: 10px;
+            vertical-align: top;
+            border: 1px solid rgb(255, 255, 255);
+        
+        }
+
+        .Table2 td {
+            margin-left: 10px;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            border: 3px solid rgb(250, 248, 248);
+        }
+     
+
+        .B{
+            margin-top: 20px;
+        }
+            
+        
+        .B2{background-color: bisque; }
+        .B3{background-color: rgb(184, 103, 22);}
+
+    
+
+     
+        </style>
+</head>
+<body>
+    <h3>게시판</h3>
+    <table class="Table1" style="width:100%"; border="1;" >
+        <tr>        
+           <td>
+               <p><h3>글쓰기</h3></p> </td>
+           </tr>
+        </table>
+
+    <table class="Table2" border="1;">
+        <tr>
+            <th> <scope="row">이름 </th>
+            <td class="tdTest"> <input type="text" name="value" style=" border: #a51d1d 1px solid;"></td>
+        </tr>
+        
+        <tr>
+            <th scope="row" >제목</th>
+            <td><input type="text" name="search"/></td>
+        </tr>
+
+        <tr>
+            <th scope="row">내용 </td>
+            <td><textarea placeholder=" " ></textarea></td>
+        </tr>
+
+        <tr>
+            <th scope="row">업로드 </th>
+            <td>
+                <input type="text">
+                <input type="file">
+            
+            </td>
+            
+        
+        </tr>
+
+                    
+    </table><br>
+    
+    <div class="B" style="text-align: right" ;>
+        
+        <button  class="B2" type="submit"  >완료</button>
+        <button  class="B3" type="submit"  >목록</button>
+
+    </div>
+    
+
+
+        
+
+</body>
+</html>
